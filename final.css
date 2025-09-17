@@ -1,0 +1,236 @@
+.dog{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:  4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.hello2{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:  4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.group{
+    height: 200px;
+    width: 300px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    box-shadow:  4px 4px 10px 2px rgba(0, 0, 0, 0.3);
+}
+.paragraph{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.paragraph::first-line{
+    color: rgb(18, 132, 138);
+    text-transform: uppercase;
+}
+p:first-child{
+    color: blueviolet;
+}
+tr:nth-child(2n) {
+    background-color: aliceblue;
+}
+.hacker::first-line{
+    color: rgb(21, 144, 58);
+    text-transform: uppercase;
+}
+.header::first-line{
+    color: rgb(138, 18, 18);
+    text-transform: uppercase;
+}
+.header{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.hacker{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.grid{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.body{
+    background: linear-gradient(to right, darkblue, blue, lightblue);
+    flex: content;
+    backdrop-filter: blur(5px) contrast(1.2);
+    animation-timeline: scroll(vertical);
+    font-family: 'Inter', sans-serif;
+}
+/* الخلفية زي .hero-bg */
+        .hero-bg {
+            background-color: #111827;
+            background-image: radial-gradient(circle at 1px 1px, #4b5563 1px, transparent 0);
+            background-size: 25px 25px;
+        }
+
+        /* تأثير الضوء حوالين زرار اللوجين */
+        .shine-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine-btn::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transform: translateX(-100%);
+        }
+
+        .shine-btn:hover::before {
+            animation: shine 1.2s linear;
+        }
+         @keyframes shine {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box1{
+    padding: 20px;
+    background-color: black;
+    width: 50px;
+    z-index: 1 ;
+    height: 50px;
+    color: white;
+    margin: 10px;
+    transition: all ease-in-out 0.5s 1s;
+    animation-name: box1;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 5;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+.box2{
+    padding: 20px;
+    background-color: black;
+    width: 50px;
+    z-index: 0;
+    height: 50px;
+    color: white;
+    margin: 10px;
+    transition: all ease-in-out 0.5s 1s;
+     animation-name: box2;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 5;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}  
+.box3{
+     padding: 20px;
+    background-color: black;
+    width: 50px;
+    z-index: 0;
+    height: 50px;
+    color: white;
+    margin: 10px;
+    transition: all ease-in-out 0.5s 1s;
+     animation-name: box3;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0.5s;
+    animation-iteration-count: 5;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}  
+@keyframes box1{
+    from{
+        background: yellow;
+        color: black;
+    }
+    to{
+        background: green;
+        color: blue;
+    }
+    0%{
+        scale: 0.9;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1.9;
+    }
+}   
+@keyframes box2{
+    from{
+        background: yellow;
+        color: black;
+    }
+    to{
+        background: palevioletred;
+        color: orange;
+        }
+        0%{
+            scale: 0.9;
+        }
+        50%{
+            scale: 1.2;
+        }
+        100%{
+            scale: 1.9;
+        }
+}
+@keyframes box3{
+    from{
+        background: yellow;
+        color: black;
+    }
+    to{
+        background: white;
+        color: red;
+    }
+    0%{
+        scale: 0.9;
+    }
+    50%{
+        scale: 1.2;
+    }
+    100%{
+        scale: 1.9;
+    }
+}
+.box.hover{
+    background-color: lightgreen;
+    transform: scale(1.5);
+    color: red;
+}
+.grid-container{
+    background-color: white;
+    border: 20px;
+}
+.grid-container div{
+    background-color: rgb(6, 120, 82);
+}
+.grid-container .grid-item1{
+    background-color: blueviolet;
+    grid-column: 1/4;
+}
+.grid-container .grid-item2{
+    background-color: cyan;
+    grid-column: 1/4;
+}
+.grid-container .grid-item4{
+    background-color: rgb(79, 79, 112);
+}
