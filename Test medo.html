@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mohamed's protofile</title>
+    <link rel="stylesheet" href="final.css">
+    <link rel="icon" type="image/png" href="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/7ae84c1e-600e-4ede-b365-d7ed049f8be7/df93hth-5f06257a-92fb-4bd7-83f1-e3e7dd412125.png/v1/fill/w_831,h_961,q_70,strp/skull_z_by_zeldian_art_df93hth-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTQ4MCIsInBhdGgiOiJcL2ZcLzdhZTg0YzFlLTYwMGUtNGVkZS1iMzY1LWQ3ZWQwNDlmOGJlN1wvZGY5M2h0aC01ZjA2MjU3YS05MmZiLTRiZDctODNmMS1lM2U3ZGQ0MTIxMjUucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.VbA7ic2i0zXRBoLfm2vCft9v7UXRVN7PgARPeenj1Qk">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&display=swap');</style>
+</head>
+<body class="body">
+    <header class="header">semi final project!
+        mohamed's protofile!
+    </header>
+    
+        <nav>
+            <a href="person1.html">Loay</a>
+            <a href="person2.html">Rana</a>
+            <a href="medo.html">mohamed</a>
+        </nav>    
+    
+        <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Air Quality Monitor</title>
+    <link rel="icon" type="image/png"
+        href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7K0IOVXn7WvuM8wl4rXWpCAvvMG8mUjenuSlZsBh6iUeoH8SlHd-dzzCdnIoSxHr6atY7R8fQKji1gIeZ282QhKL-QbXSEUaayoYuxFdtWtogbLhcBOwBAKWuKcolUYEzDxDd8xkgjP-ZSIsIS1DsSx_50DhHDoUp8LVN1hDsy-jHCJxn4vbPnoKnYE/s1260/favicon.png">
+
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* الخلفية زي .hero-bg */
+        .hero-bg {
+            background-color: #111827;
+            background-image: radial-gradient(circle at 1px 1px, #4b5563 1px, transparent 0);
+            background-size: 25px 25px;
+        }
+
+        /* تأثير الضوء حوالين الزرار */
+        .shine-btn {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .shine-btn::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.4), transparent);
+            transform: translateX(-100%);
+        }
+
+        .shine-btn:hover::before {
+            animation: shine 1.2s linear;
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
+        }
+    </style>
+</head>
+
+<body class="hero-bg">
+
+    <!-- Sign Up Section -->
+    <section class="min-h-screen flex items-center justify-center">
+        <div
+            class="bg-white/20 backdrop-blur-xl border border-white/30 shadow-2xl rounded-2xl p-8 w-full max-w-md text-white">
+
+            <!-- اللوجو / عنوان -->
+            <div class="text-center mb-8">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjk7K0IOVXn7WvuM8wl4rXWpCAvvMG8mUjenuSlZsBh6iUeoH8SlHd-dzzCdnIoSxHr6atY7R8fQKji1gIeZ282QhKL-QbXSEUaayoYuxFdtWtogbLhcBOwBAKWuKcolUYEzDxDd8xkgjP-ZSIsIS1DsSx_50DhHDoUp8LVN1hDsy-jHCJxn4vbPnoKnYE/s1260/favicon.png"
+                    alt="Logo" class="h-12 w-12 mx-auto mb-4 drop-shadow-lg">
+                <h1 class="text-3xl font-bold text-white">Create Account</h1>
+                <p class="text-gray-200 mt-2">Join us today</p>
+            </div>
+
+            <!-- الفورم -->
+            <form class="space-y-6">
+                <!-- Name -->
+                <div>
+                    <label for="name" class="block text-sm font-medium text-gray-200 text-left">Full Name</label>
+                    <input id="name" name="name" type="text" required placeholder="Write you name"
+                        class="w-full mt-2 px-4 py-3 rounded-lg border border-white/40 bg-white/10 text-white placeholder-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-300 outline-none transition">
+                </div>
+
+                <!-- Email -->
+                <div>
+                    <label for="email" class="block text-sm font-medium text-gray-200 text-left">Email</label>
+                    <input id="email" name="email" type="email" required placeholder="Write your email"
+                        class="w-full mt-2 px-4 py-3 rounded-lg border border-white/40 bg-white/10 text-white placeholder-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-300 outline-none transition">
+                </div>
+
+                <!-- Password -->
+                <div>
+                    <label for="password" class="block text-sm font-medium text-gray-200 text-left">Password</label>
+                    <input id="password" name="password" type="password" required placeholder="Write a complex password"
+                        class="w-full mt-2 px-4 py-3 rounded-lg border border-white/40 bg-white/10 text-white placeholder-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-300 outline-none transition">
+                </div>
+
+                <!-- Confirm Password -->
+                <div>
+                    <label for="confirm" class="block text-sm font-medium text-gray-200 text-left">Confirm
+                        Password</label>
+                    <input id="confirm" name="confirm" type="password" required placeholder="confirm your password"
+                        class="w-full mt-2 px-4 py-3 rounded-lg border border-white/40 bg-white/10 text-white placeholder-gray-300 focus:border-blue-400 focus:ring focus:ring-blue-300 outline-none transition">
+                </div>
+
+                <!-- Sign Up Button -->
+                <button type="submit" class="w-full bg-blue-600 text-white text-lg px-6 py-3 rounded-lg font-bold 
+                       hover:bg-blue-700 transition-transform transform hover:scale-105 shine-btn">
+                    Sign Up
+                </button>
+            </form>
+
+            <!-- Login Link -->
+            <p class="text-center text-gray-200 mt-6">
+                Already have an account?
+                <a href="login.html" class="text-blue-300 font-medium hover:underline">Login</a>
+            </p>
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+    <article>hello my name is mohamed abdelaziz</article><br>
+    <main>
+        <p>I am the leader of team quartz</p>
+        <p class="paragraph"> team quartz is a group of people that consists of 4 members loay ahmed, rana sakr and the mentor</p>
+    </main>
+<img src="https://tse4.mm.bing.net/th/id/OIP.ELKjqpllsB5o6clEb1F7uAHaEK?rs=1&pid=ImgDetMain&o=7&rm=3" alt="A HACKER!" class="dog">
+<img src="https://wallpapers.com/images/hd/hacker-pictures-nzfpuzg5idgrfjgb.jpg" alt="A HACKER!!" class="hello2"><br>
+<main>
+    <p>these are hackers and we should avoid them</p><br>
+</main>
+<img src="https://c8.alamy.com/comp/2N4MH12/hackers-team-working-together-to-break-security-system-on-computer-stealing-data-and-passwords-people-planting-virus-and-doing-phishing-for-ransomware-cyberbullying-or-harassment-2N4MH12.jpg" alt="group working I guess??" class="group"><br>
+<main>
+    <p>and this is a group working together so they can defeat hackers</p><br>
+</main>
+<h1 class="hacker">In conclusion : a hacker is a skilled individual in information technology
+     who uses their technical abilities to exploit vulnerabilities in systems, networks or software</h1>
+ <!-- Skills Table -->
+        <section>
+            <h2>My Skills</h2>
+            <table>
+                <tr>
+                    <th>Skill</th>
+                    <th>Level</th>
+                    <th>Experience</th>
+                </tr>
+                <tr>
+                    <td>HTML</td>
+                    <td>Advanced</td>
+                    <td>3 Years</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>Advanced</td>
+                    <td>3 Years</td>
+                </tr>
+                <tr>
+                    <td>React</td>
+                    <td>Intermediate</td>
+                    <td>2 Years</td>
+                </tr>
+            </table>
+        </section>
+<iframe width="928" height="522" src="https://www.youtube.com/embed/eULy-tljA4o" title="الشيخ مشاري راشد العفاسي سورة يوسف Surat Yusuf - Mishary Rashid Alafasy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<audio controls>
+  <source src="c:\Users\DELL\Downloads\001.mp3" type="audio/mpeg"><br>
+</audio>        
+<link rel="manifest" href="/site.webmanifest">
+    <h1 class="grid">this is the css grid</h1>
+    <div class="grid-container">
+<div class="grid-item1">item1</div>
+<div class="grid-item2">item2</div>
+<div class="grid-item3">item3</div>
+<div class="grid-item4">item4</div>
+    </div>
+    <div style="
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 10px;
+">
+</div>
+</body>
